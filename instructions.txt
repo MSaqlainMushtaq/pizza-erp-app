@@ -1,0 +1,67 @@
+# paste this link at the top of each page that you want to show after the login
+<?php
+require_once '../../includes/auth_check.php';
+?>
+
+# paste this below php portion of code after include the above file that will  
+# start session in every page where you want that only admin access this page 
+
+
+<?php
+// Only admin can access
+if ($_SESSION['user']['role'] !== 'admin') {
+    echo "<p style='color:red; padding-left:200px; padding-top:50px;'>Access denied. Only admins can access this page.</p>";
+    include_once '../../includes/footer.php';
+    exit;
+}
+?>
+
+# paste this below php portion of code after include the above file that will start 
+# session in every page where you want that only admin and manager both access this page 
+
+
+<?php
+// ✅ Allow only admin and manager to access
+if (!isset($_SESSION['user']) || !in_array(strtolower($_SESSION['user']['role']), ['admin', 'manager'])) {
+    echo "<p style='color:red; padding-left:20px; padding-top:50px;'>Access denied. Only admins and managers can access this page.</p>";
+    include_once '../../includes/footer.php';
+    exit;
+}
+?>
+
+
+# At the top of every customer page:
+
+<?php
+session_start();
+if (!isset($_SESSION['customer'])) {
+    header("Location: /views/customers/login.php");
+    exit;
+}
+?>
+
+
+# Put this at the top of each staff and admin page to protect them from customers 
+
+if (!isset($_SESSION['user'])) { ... }
+
+
+
+
+
+https://rehanschool.net/books/
+
+
+
+
+This is used to create first superuser in system 
+
+run this code in php extension file 
+<?php
+echo password_hash("MyStrongPassword123!", PASSWORD_DEFAULT);
+?>
+This is the output of the above code 
+$2y$10$ExAmPleHASH....
+put this output in the below sql command and run in the phpadmin panel in sql section
+INSERT INTO users (username, email, password, role)
+VALUES ('admin', 'admin@example.com', '$2y$10$ExAmPleHASH....', 'admin');

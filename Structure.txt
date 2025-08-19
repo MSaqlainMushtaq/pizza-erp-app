@@ -1,0 +1,128 @@
+pizza-erp-app/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css       
+│   │ 
+│   ├── images/
+│   │   ├── logo.jpg
+│   │   └── logo.png
+│   │
+│   ├── js/
+│   │   └── script.js
+│
+├── config/
+│   └── db.php                   
+│
+├── controllers/
+│   ├── auth.php                    
+│   ├── categories.php  
+│   ├── customer_auth.php
+│   ├── dashboard.php
+│   ├── deals.php
+│   ├── employees.php
+│   ├── expenses.php
+│   ├── get_price.php
+│   ├── invoices.php             
+│   ├── products.php
+│   ├── recipes.php                
+│   ├── reports_range.php
+│   ├── sales.php               
+│   ├── units.php
+│   └── users.php
+│
+├── includes/
+│   ├── auth_check.php                
+│   ├── footer.php                  
+│   ├── header.php 
+│   ├── invoice_header.php              
+│   ├── navbar.php 
+│   └── sidebar.php
+│
+├── libs/
+│   ├── phpspreadsheet/                    
+│   └── tcpdf/
+│
+├── views/
+│   ├── auth/
+│   │   ├── login.php               
+│   │   ├── logout.php       
+│   │   └── signup.php 
+│   │
+│   ├── Categories/               
+│   │   ├── add_Category.php       
+│   │   ├── delete_Category.php 
+│   │   ├── edit_Category.php 
+│   │   └── index.php
+│   │
+│   ├── customers/
+│   │   ├── dashboard.php
+│   │   ├── login.php               
+│   │   ├── logout.php       
+│   │   └── signup.php
+│   │  
+│   ├── deals/
+│   │   ├── add_deal.php
+│   │   ├── edit_deal.php                      
+│   │   └── index.php 
+│   │
+│   ├── employees/               
+│   │   ├── add_employee.php 
+│   │   ├── edit_employee.php 
+│   │   └── index.php
+│   │
+│   ├── expenses/               
+│   │   ├── add_expense.php 
+│   │   ├── edit_expense.php 
+│   │   └── index.php
+│   │
+│   ├── inventory/              
+│   │   ├── add_ingredient.php       
+│   │   ├── delete_ingredient.php 
+│   │   ├── edit_ingredient.php
+│   │   └── index.php 
+│   │
+│   ├── invoices/ 
+│   │   └── print.php
+│   │
+│   ├── products/               
+│   │   ├── add_product.php       
+│   │   ├── delete_product.php 
+│   │   ├── edit_product.php
+│   │   ├── index.php
+│   │   └── update_product.php       
+│   │
+│   ├── recipes/               
+│   │   ├── add_recipe.php       
+│   │   ├── edit_recipe.php
+│   │   └── index.php 
+│   │   
+│   ├── reports/
+│   │   ├── expenses_report_range.php               
+│   │   ├── index.php       
+│   │   ├── sales_report_range.php 
+│   │   ├── stock_added_report_range.php
+│   │   └── stock_usage_report_range.php
+│   │
+│   ├── sales/               
+│   │   ├── add_sale.php
+│   │   ├── delete_sale.php
+│   │   ├── index.php
+│   │   └── view_sale.php        
+│   │
+│   ├── units/               
+│   │   ├── add_unit.php  
+│   │   ├── edit_unit.php
+│   │   └── index.php
+│   │
+│   ├── users/               
+│   │   ├── add_user.php  
+│   │   ├── edit_user.php
+│   │   └── index.php
+│   │  
+│   └── dashboard.php
+│
+├── Readme          
+├── schema.sql
+└── Structure.txt                      
+
