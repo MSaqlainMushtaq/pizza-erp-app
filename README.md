@@ -37,11 +37,11 @@ Frontend: HTML, CSS, JavaScript
 Backend: PHP (Core PHP, Modular MVC-style structure)  
 Database: MySQL  
 Libraries:{  
-    PhpSpreadsheet  
-     → Excel export  
-    TCPDF  
-     → PDF export  
-     }  
+&nbsp;&nbsp;&nbsp;&nbsp;PhpSpreadsheet  
+&nbsp;&nbsp;&nbsp;&nbsp; → Excel export  
+&nbsp;&nbsp;&nbsp;&nbsp;TCPDF  
+&nbsp;&nbsp;&nbsp;&nbsp; → PDF export  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
 
 ## Installation
 
@@ -82,7 +82,7 @@ http://localhost/pizza-erp-app/views/auth/login.php
 Admin User  
 Username: Admin  
 Password: admin@123  
-(You can change this in users table after import)  
+(You can change this in users module after login go to update user)  
 
 ## Future Improvements
 
