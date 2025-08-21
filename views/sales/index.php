@@ -94,10 +94,7 @@ foreach ($sales as $sale) {
         </div>
     </div>
 
-  <!--   This End the admin or manager access logic -->  
-        <?php else: ?>
-            <p style="color:red; padding:20px;">Access denied. Only admins and managers can view sales data.</p>
-        <?php endif; ?>
+  
 
 
     <div class="filter-row">
@@ -126,7 +123,10 @@ foreach ($sales as $sale) {
             <button type="submit">Filter</button>
         </form>
 
-
+<!--   This End the admin or manager access logic -->  
+        <?php else: ?>
+            <p style="color:red; padding:20px;">Access denied. Only admins and managers can view sales data.</p>
+        <?php endif; ?>
 
         <a href="add_sale.php" class="btn btn-primary">+ Add New Sale</a>
     </div>

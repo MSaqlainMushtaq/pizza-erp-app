@@ -34,7 +34,7 @@ function getMonthlySummary($conn, $month, $year) {
 
     // Total expenses
     $summary['total_expenses'] = $summary['ingredient_cost'] + $summary['salaries'] + $summary['manual_expenses'];
-    $summary['profit'] = $summary['sales'] - $summary['total_expenses'];
+    $summary['profit'] = max(0, $summary['sales'] - $summary['total_expenses']);
 
     return $summary;
 }
