@@ -15,10 +15,10 @@ Expense Tracking
 Employee Management  
 Deals Management (Combo offers, discounts)  
 Reports{  
-    Sales report (view/export to PDF)  
-    Inventory report (view/export to Excel/PDF)  
-    Customer Dashboard (for order history & profile)  
-    }  
+&nbsp;&nbsp;&nbsp;&nbsp;Sales report (view/export to PDF)  
+&nbsp;&nbsp;&nbsp;&nbsp;Inventory report (view/export to Excel/PDF)  
+&nbsp;&nbsp;&nbsp;&nbsp;Customer Dashboard (for order history & profile)  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
 
 ## Project Structure
 pizza-erp-app/  
