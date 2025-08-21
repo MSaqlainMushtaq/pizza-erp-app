@@ -122,7 +122,8 @@ pizza-erp-app/
 │   │  
 │   └── dashboard.php
 │
-├── Readme          
-├── schema.sql
-└── Structure.txt                      
+├── README.md          
+├── Structure.txt
+├── instructions.txt
+└── pizza_erp_db.sql                    
 
